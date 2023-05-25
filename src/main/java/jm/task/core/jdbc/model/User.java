@@ -44,7 +44,7 @@ public class User {
         this.name = name;
     }
 
-    public String getLastName() {
+    public String getLastName(String lastname) {
         return lastName;
     }
 
@@ -52,11 +52,21 @@ public class User {
         this.lastName = lastName;
     }
 
-    public Byte getAge() {
-        return age;
+    public Byte getAge(byte age) {
+        return this.age;
     }
 
     public void setAge(Byte age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
